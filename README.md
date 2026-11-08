@@ -17,7 +17,7 @@ pip install .
 fisherlab demo
 ```
 
-The demo asserts both agreement and counterexamples. The committed [full report](examples/demo.json), [strict input](examples/input.json), [proof and scope](DESIGN.md) and byte-reproducible SVG make the numbers inspectable. 28 tests pass. CI runs Python 3.10-3.13, both CLI paths, SVG regeneration and installed-wheel comparisons outside the source checkout.
+The demo asserts both agreement and counterexamples. The committed [full report](examples/demo.json), [strict input](examples/input.json), [proof and scope](DESIGN.md) and byte-reproducible SVG make the numbers inspectable. 45 tests pass. CI runs Python 3.10-3.13, both CLI paths, SVG regeneration and installed-wheel comparisons outside the source checkout.
 
 ## Exact fixture, not a training benchmark
 
@@ -69,6 +69,18 @@ Inputs: 2-8 strictly positive rational probabilities summing exactly to 1, align
 - Three SVG tests verify all 60 table cells and positions, exact nonlinear logit controls, complete compressed report metadata, hidden witness tampering and byte regeneration.
 - Full-support categorical expected reward only. There are no MDP transitions, estimated occupancies, learned critics, sampled Fisher/gradient noise, policy training, neural networks, line search, trust-region enforcement or convergence/optimizer-superiority benchmark. Boundary probabilities are rejected, not regularized silently.
 - Singular solves are consistent because the reward gradient is in the pullback Fisher's range. The PSD certificate uses positive action probabilities. Damping is deliberately coordinate-identity damping, not an invariantly transformed regularizer. The input Jacobian alone does not specify any nonlinear finite update; that control is separately defined.
+
+## Shared-context extension
+
+![Shared parameters and exact context tradeoffs](assets/context-audit.svg)
+
+`audit_contexts` and the `context-demo` / `contexts INPUT.json` CLI paths aggregate exact Fisher and reward-gradient systems across 1-6 fixed contexts sharing parameters. [Derivation, model and witness](CONTEXTS.md), [full report](examples/context-demo.json) and [caller input](examples/contexts-input.json).
+
+With context frequencies `(3/4,1/4)`, equal binary action probabilities and rewards `(0,1)` / `(0,-2)`, a shared parameter has natural direction `1/4`. Total reward derivative is positive `1/64`, but the second context's derivative is negative `-1/8`. The full-conditional target has exact squared length `7/16 = 1/64 + 27/64` (reachable plus metric-orthogonal residual). Independent context parameters reach both targets and have zero residual; they are a larger model, not a training benchmark.
+
+Replacing frequencies with uniform weights changes the objective. Its natural direction `-1/2` has derivative `-1/32` when evaluated on the original weighted objective. A separate context-gauge control is frozen under conditional normalization but has spurious nonzero Fisher/gradient if naively modeled as a global joint softmax. Full context-tagged PSD, RREF/nullspace, per-context derivative and projection witnesses make both distinctions inspectable.
+
+14 new behavior tests plus 3 SVG tests supplement the original 28, including independent weighted reward/KL finite differences, centered joint-score reconstruction, exact projection/null certificates, strict CLI and conditional-versus-joint controls. Context weights are positive exogenous constants, not MDP occupancies or policy-dependent frequencies. Local derivative agreement and aggregate improvement do not promise every context or finite step improves.
 
 ## Attribution
 
