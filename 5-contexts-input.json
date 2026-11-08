@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "weights": ["3/4", "1/4"],
+  "damping": "1/10",
+  "contexts": [
+    {"probabilities": ["1/2", "1/2"], "rewards": [0, 1], "coordinates": [[0], [1]]},
+    {"probabilities": ["1/2", "1/2"], "rewards": [0, -2], "coordinates": [[0], [1]]}
+  ]
+}

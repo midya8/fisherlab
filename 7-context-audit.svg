@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="880" viewBox="0 0 1120 880">
+<title>FisherLab: sharing parameters creates context tradeoffs</title>
+<desc>Exact local derivatives and metric projection certificates under fixed exogenous context frequencies.</desc>
+<rect width="1120" height="880" fill="#0f172a"/>
+<metadata id="full-witness" encoding="zlib-base64-json">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</metadata>
+<text x="28" y="43" fill="#dbeafe" font-size="28" font-weight="700" font-family="DejaVu Sans,sans-serif">FisherLab | sharing creates context tradeoffs</text>
+<text x="28" y="73" fill="#94a3b8" font-size="15" font-weight="400" font-family="DejaVu Sans,sans-serif">Known exogenous context weights, conditional softmax policies and one shared local parameter.</text>
+<rect x="25" y="95" width="523" height="119" rx="12" fill="#18253b" stroke="#334155"/>
+<rect x="565" y="95" width="530" height="119" rx="12" fill="#18253b" stroke="#334155"/>
+<text x="44" y="125" fill="#67e8f9" font-size="18" font-weight="700" font-family="DejaVu Sans,sans-serif">Context 0</text>
+<text x="44" y="153" fill="#dbeafe" font-size="15" font-weight="400" font-family="monospace">weight 3/4   p=(1/2,1/2)   rewards=(0,1)</text>
+<text x="44" y="183" fill="#94a3b8" font-size="14" font-weight="400" font-family="DejaVu Sans,sans-serif">A rows=(0),(1): action-1 probability rises with theta</text>
+<text x="584" y="125" fill="#67e8f9" font-size="18" font-weight="700" font-family="DejaVu Sans,sans-serif">Context 1</text>
+<text x="584" y="153" fill="#dbeafe" font-size="15" font-weight="400" font-family="monospace">weight 1/4   p=(1/2,1/2)   rewards=(0,-2)</text>
+<text x="584" y="183" fill="#94a3b8" font-size="14" font-weight="400" font-family="DejaVu Sans,sans-serif">Same A and theta: action-1 probability also rises here</text>
+<rect x="25" y="231" width="1070" height="211" rx="12" fill="#18253b" stroke="#334155"/>
+<text x="44" y="262" fill="#67e8f9" font-size="13" font-weight="700" font-family="DejaVu Sans,sans-serif">model / objective</text>
+<text x="321" y="262" fill="#67e8f9" font-size="13" font-weight="700" font-family="DejaVu Sans,sans-serif">rank / dim</text>
+<text x="445" y="262" fill="#67e8f9" font-size="13" font-weight="700" font-family="DejaVu Sans,sans-serif">direction v</text>
+<text x="580" y="262" fill="#67e8f9" font-size="13" font-weight="700" font-family="DejaVu Sans,sans-serif">dJ context0</text>
+<text x="715" y="262" fill="#67e8f9" font-size="13" font-weight="700" font-family="DejaVu Sans,sans-serif">dJ context1</text>
+<text x="848" y="262" fill="#67e8f9" font-size="13" font-weight="700" font-family="DejaVu Sans,sans-serif">weighted dJ</text>
+<text x="985" y="262" fill="#67e8f9" font-size="13" font-weight="700" font-family="DejaVu Sans,sans-serif">residual^2</text>
+<text id="chart-0-0" x="44" y="302" fill="#dbeafe" font-size="13" font-weight="400" font-family="DejaVu Sans,sans-serif">weighted, shared</text>
+<text id="chart-0-1" x="321" y="302" fill="#dbeafe" font-size="15" font-weight="400" font-family="monospace">1 / 1</text>
+<text id="chart-0-2" x="445" y="302" fill="#dbeafe" font-size="15" font-weight="400" font-family="monospace">1/4</text>
+<text id="chart-0-3" x="580" y="302" fill="#dbeafe" font-size="15" font-weight="400" font-family="monospace">1/16</text>
+<text id="chart-0-4" x="715" y="302" fill="#dbeafe" font-size="15" font-weight="400" font-family="monospace">-1/8</text>
+<text id="chart-0-5" x="848" y="302" fill="#dbeafe" font-size="15" font-weight="400" font-family="monospace">1/64</text>
+<text id="chart-0-6" x="985" y="302" fill="#dbeafe" font-size="15" font-weight="400" font-family="monospace">27/64</text>
+<text id="chart-1-0" x="44" y="345" fill="#dbeafe" font-size="13" font-weight="400" font-family="DejaVu Sans,sans-serif">weighted, independent</text>
+<text id="chart-1-1" x="321" y="345" fill="#dbeafe" font-size="15" font-weight="400" font-family="monospace">2 / 2</text>
+<text id="chart-1-2" x="445" y="345" fill="#dbeafe" font-size="15" font-weight="400" font-family="monospace">1,-2</text>
+<text id="chart-1-3" x="580" y="345" fill="#dbeafe" font-size="15" font-weight="400" font-family="monospace">1/4</text>
+<text id="chart-1-4" x="715" y="345" fill="#dbeafe" font-size="15" font-weight="400" font-family="monospace">1</text>
+<text id="chart-1-5" x="848" y="345" fill="#dbeafe" font-size="15" font-weight="400" font-family="monospace">7/16</text>
+<text id="chart-1-6" x="985" y="345" fill="#dbeafe" font-size="15" font-weight="400" font-family="monospace">0</text>
+<text id="chart-2-0" x="44" y="388" fill="#fbbf24" font-size="13" font-weight="400" font-family="DejaVu Sans,sans-serif">uniform, shared (new objective)</text>
+<text id="chart-2-1" x="321" y="388" fill="#fbbf24" font-size="15" font-weight="400" font-family="monospace">1 / 1</text>
+<text id="chart-2-2" x="445" y="388" fill="#fbbf24" font-size="15" font-weight="400" font-family="monospace">-1/2</text>
+<text id="chart-2-3" x="580" y="388" fill="#fbbf24" font-size="15" font-weight="400" font-family="monospace">-1/8</text>
+<text id="chart-2-4" x="715" y="388" fill="#fbbf24" font-size="15" font-weight="400" font-family="monospace">1/4</text>
+<text id="chart-2-5" x="848" y="388" fill="#fbbf24" font-size="15" font-weight="400" font-family="monospace">1/16</text>
+<text id="chart-2-6" x="985" y="388" fill="#fbbf24" font-size="15" font-weight="400" font-family="monospace">9/16</text>
+<text x="44" y="424" fill="#94a3b8" font-size="13" font-weight="400" font-family="DejaVu Sans,sans-serif">Positive aggregate derivative does not mean every context improves. These are local derivatives, not training curves.</text>
+<rect x="25" y="460" width="586" height="208" rx="12" fill="#18253b" stroke="#334155"/>
+<rect x="628" y="460" width="467" height="208" rx="12" fill="#18253b" stroke="#334155"/>
+<text x="44" y="490" fill="#67e8f9" font-size="17" font-weight="700" font-family="DejaVu Sans,sans-serif">Exact projection audit under weights (3/4,1/4)</text>
+<text x="44" y="520" fill="#94a3b8" font-size="14" font-weight="400" font-family="DejaVu Sans,sans-serif">Full target length squared = within-context variance sum</text>
+<text x="44" y="552" fill="#dbeafe" font-size="15" font-weight="400" font-family="DejaVu Sans,sans-serif">full = reachable + residual</text>
+<text id="pyth-equation" x="333" y="552" fill="#dbeafe" font-size="17" font-weight="400" font-family="monospace">7/16 = 1/64 + 27/64</text>
+<text x="44" y="584" fill="#94a3b8" font-size="14" font-weight="400" font-family="DejaVu Sans,sans-serif">projection inner product</text>
+<text id="projection" x="435" y="584" fill="#dbeafe" font-size="17" font-weight="400" font-family="monospace">0</text>
+<text x="44" y="615" fill="#94a3b8" font-size="14" font-weight="400" font-family="DejaVu Sans,sans-serif">Pythagorean equality residual</text>
+<text id="pyth-residual" x="435" y="615" fill="#dbeafe" font-size="17" font-weight="400" font-family="monospace">0</text>
+<text x="44" y="645" fill="#94a3b8" font-size="13" font-weight="400" font-family="DejaVu Sans,sans-serif">Independent parameters reach both context targets exactly.</text>
+<text x="646" y="490" fill="#67e8f9" font-size="17" font-weight="700" font-family="DejaVu Sans,sans-serif">Reweighting changes the objective</text>
+<text x="646" y="522" fill="#dbeafe" font-size="15" font-weight="400" font-family="DejaVu Sans,sans-serif">Uniform-objective direction: v = -1/2</text>
+<text x="646" y="552" fill="#dbeafe" font-size="14" font-weight="400" font-family="DejaVu Sans,sans-serif">Derivative of original weighted objective:</text>
+<text id="wrong-objective" x="646" y="586" fill="#fbbf24" font-size="25" font-weight="700" font-family="DejaVu Sans,sans-serif">-1/32</text>
+<text x="646" y="618" fill="#fbbf24" font-size="14" font-weight="400" font-family="DejaVu Sans,sans-serif">Negative here, although its own objective rises.</text>
+<text x="646" y="645" fill="#94a3b8" font-size="13" font-weight="400" font-family="DejaVu Sans,sans-serif">Not an approximation to the original weighted objective.</text>
+<rect x="25" y="686" width="1070" height="133" rx="12" fill="#18253b" stroke="#334155"/>
+<text x="44" y="715" fill="#67e8f9" font-size="17" font-weight="700" font-family="DejaVu Sans,sans-serif">A global softmax over joint outcomes is a different model</text>
+<text x="44" y="742" fill="#94a3b8" font-size="14" font-weight="400" font-family="DejaVu Sans,sans-serif">Constant logit rows within each context: A0=(0),(0), A1=(1),(1). Conditional policies cannot move.</text>
+<text x="44" y="775" fill="#94a3b8" font-size="14" font-weight="400" font-family="DejaVu Sans,sans-serif">conditional G</text>
+<text id="gauge-0" x="194" y="775" fill="#dbeafe" font-size="16" font-weight="400" font-family="monospace">0</text>
+<text x="304" y="775" fill="#94a3b8" font-size="14" font-weight="400" font-family="DejaVu Sans,sans-serif">conditional g</text>
+<text id="gauge-1" x="454" y="775" fill="#dbeafe" font-size="16" font-weight="400" font-family="monospace">0</text>
+<text x="564" y="775" fill="#94a3b8" font-size="14" font-weight="400" font-family="DejaVu Sans,sans-serif">naive joint G</text>
+<text id="gauge-2" x="714" y="775" fill="#fbbf24" font-size="16" font-weight="400" font-family="monospace">3/16</text>
+<text x="824" y="775" fill="#94a3b8" font-size="14" font-weight="400" font-family="DejaVu Sans,sans-serif">naive joint g</text>
+<text id="gauge-3" x="974" y="775" fill="#fbbf24" font-size="16" font-weight="400" font-family="monospace">-9/32</text>
+<text x="44" y="802" fill="#94a3b8" font-size="13" font-weight="400" font-family="DejaVu Sans,sans-serif">Naive joint logits move context mass, violating the fixed-context model. No such update is used by audit_contexts.</text>
+<text x="28" y="849" fill="#94a3b8" font-size="13" font-weight="400" font-family="DejaVu Sans,sans-serif">All displayed derivatives and certificates are exact rationals. Strict positive action and context probabilities.</text>
+<text x="28" y="873" fill="#94a3b8" font-size="13" font-weight="400" font-family="DejaVu Sans,sans-serif">Supplied contextual expected rewards, not MDP occupancies, training guarantees or a new natural-gradient algorithm.</text>
+</svg>
