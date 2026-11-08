@@ -1,0 +1,1559 @@
+{
+  "version": 1,
+  "charts": [
+    {
+      "name": "baseline",
+      "audit": {
+        "version": 1,
+        "probabilities": [
+          "1/2",
+          "1/3",
+          "1/6"
+        ],
+        "rewards": [
+          "0",
+          "1",
+          "3"
+        ],
+        "coordinates": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "damping": "1/10",
+        "expected_reward": "5/6",
+        "reward_variance": "41/36",
+        "logit_fisher": [
+          [
+            "1/4",
+            "-1/6",
+            "-1/12"
+          ],
+          [
+            "-1/6",
+            "2/9",
+            "-1/18"
+          ],
+          [
+            "-1/12",
+            "-1/18",
+            "5/36"
+          ]
+        ],
+        "probability_jacobian": [
+          [
+            "1/4",
+            "-1/6"
+          ],
+          [
+            "-1/6",
+            "2/9"
+          ],
+          [
+            "-1/12",
+            "-1/18"
+          ]
+        ],
+        "pullback_fisher": [
+          [
+            "1/4",
+            "-1/6"
+          ],
+          [
+            "-1/6",
+            "2/9"
+          ]
+        ],
+        "parameter_gradient": [
+          "-5/12",
+          "1/18"
+        ],
+        "score_rows": [
+          [
+            "1/2",
+            "-1/3"
+          ],
+          [
+            "-1/2",
+            "2/3"
+          ],
+          [
+            "-1/2",
+            "-1/3"
+          ]
+        ],
+        "score_gram": [
+          [
+            "1/4",
+            "-1/6"
+          ],
+          [
+            "-1/6",
+            "2/9"
+          ]
+        ],
+        "pair_certificate": [
+          {
+            "actions": [
+              0,
+              1
+            ],
+            "weight": "1/6",
+            "difference": [
+              "1",
+              "-1"
+            ]
+          },
+          {
+            "actions": [
+              0,
+              2
+            ],
+            "weight": "1/12",
+            "difference": [
+              "1",
+              "0"
+            ]
+          },
+          {
+            "actions": [
+              1,
+              2
+            ],
+            "weight": "1/18",
+            "difference": [
+              "0",
+              "1"
+            ]
+          }
+        ],
+        "pair_gram": [
+          [
+            "1/4",
+            "-1/6"
+          ],
+          [
+            "-1/6",
+            "2/9"
+          ]
+        ],
+        "gram_agrees": true,
+        "system": {
+          "solution": [
+            "-3",
+            "-2"
+          ],
+          "rank": 2,
+          "pivots": [
+            0,
+            1
+          ],
+          "free_columns": [],
+          "null_basis": [],
+          "rref_augmented": [
+            [
+              "1",
+              "0",
+              "-3"
+            ],
+            [
+              "0",
+              "1",
+              "-2"
+            ]
+          ]
+        },
+        "solve_residual": [
+          "0",
+          "0"
+        ],
+        "null_probability_tangents": [],
+        "full_simplex_rank": 2,
+        "full_simplex_reachable": true,
+        "full_simplex_natural_tangent": [
+          "-5/12",
+          "1/18",
+          "13/36"
+        ],
+        "natural": {
+          "parameter_direction": [
+            "-3",
+            "-2"
+          ],
+          "logit_direction": [
+            "-3",
+            "-2",
+            "0"
+          ],
+          "probability_tangent": [
+            "-5/12",
+            "1/18",
+            "13/36"
+          ],
+          "full_simplex_gap_l1": "0",
+          "objective_derivative": "41/36",
+          "fisher_length_squared": "41/36",
+          "probability_length_squared": "41/36"
+        },
+        "ordinary": {
+          "parameter_direction": [
+            "-5/12",
+            "1/18"
+          ],
+          "logit_direction": [
+            "-5/12",
+            "1/18",
+            "0"
+          ],
+          "probability_tangent": [
+            "-49/432",
+            "53/648",
+            "41/1296"
+          ],
+          "full_simplex_gap_l1": "427/648",
+          "objective_derivative": "229/1296",
+          "fisher_length_squared": "2417/46656",
+          "probability_length_squared": "2417/46656"
+        },
+        "diagonal": {
+          "parameter_direction": [
+            "-5/3",
+            "1/4"
+          ],
+          "logit_direction": [
+            "-5/3",
+            "1/4",
+            "0"
+          ],
+          "probability_tangent": [
+            "-11/24",
+            "1/3",
+            "1/8"
+          ],
+          "full_simplex_gap_l1": "5/9",
+          "objective_derivative": "17/24",
+          "fisher_length_squared": "61/72",
+          "probability_length_squared": "61/72"
+        },
+        "damped": {
+          "parameter_direction": [
+            "-25/17",
+            "-10/17"
+          ],
+          "logit_direction": [
+            "-25/17",
+            "-10/17",
+            "0"
+          ],
+          "probability_tangent": [
+            "-55/204",
+            "35/306",
+            "95/612"
+          ],
+          "full_simplex_gap_l1": "7/17",
+          "objective_derivative": "355/612",
+          "fisher_length_squared": "3425/10404",
+          "probability_length_squared": "3425/10404"
+        },
+        "representative": "exact RREF with free variables zero, not a pseudoinverse",
+        "scope": "local categorical expected reward; no state dynamics, sampled estimator, trust-region guarantee or training benchmark"
+      }
+    },
+    {
+      "name": "shear",
+      "audit": {
+        "version": 1,
+        "probabilities": [
+          "1/2",
+          "1/3",
+          "1/6"
+        ],
+        "rewards": [
+          "0",
+          "1",
+          "3"
+        ],
+        "coordinates": [
+          [
+            "1",
+            "2"
+          ],
+          [
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "damping": "1/10",
+        "expected_reward": "5/6",
+        "reward_variance": "41/36",
+        "logit_fisher": [
+          [
+            "1/4",
+            "-1/6",
+            "-1/12"
+          ],
+          [
+            "-1/6",
+            "2/9",
+            "-1/18"
+          ],
+          [
+            "-1/12",
+            "-1/18",
+            "5/36"
+          ]
+        ],
+        "probability_jacobian": [
+          [
+            "1/4",
+            "1/3"
+          ],
+          [
+            "-1/6",
+            "-1/9"
+          ],
+          [
+            "-1/12",
+            "-2/9"
+          ]
+        ],
+        "pullback_fisher": [
+          [
+            "1/4",
+            "1/3"
+          ],
+          [
+            "1/3",
+            "5/9"
+          ]
+        ],
+        "parameter_gradient": [
+          "-5/12",
+          "-7/9"
+        ],
+        "score_rows": [
+          [
+            "1/2",
+            "2/3"
+          ],
+          [
+            "-1/2",
+            "-1/3"
+          ],
+          [
+            "-1/2",
+            "-4/3"
+          ]
+        ],
+        "score_gram": [
+          [
+            "1/4",
+            "1/3"
+          ],
+          [
+            "1/3",
+            "5/9"
+          ]
+        ],
+        "pair_certificate": [
+          {
+            "actions": [
+              0,
+              1
+            ],
+            "weight": "1/6",
+            "difference": [
+              "1",
+              "1"
+            ]
+          },
+          {
+            "actions": [
+              0,
+              2
+            ],
+            "weight": "1/12",
+            "difference": [
+              "1",
+              "2"
+            ]
+          },
+          {
+            "actions": [
+              1,
+              2
+            ],
+            "weight": "1/18",
+            "difference": [
+              "0",
+              "1"
+            ]
+          }
+        ],
+        "pair_gram": [
+          [
+            "1/4",
+            "1/3"
+          ],
+          [
+            "1/3",
+            "5/9"
+          ]
+        ],
+        "gram_agrees": true,
+        "system": {
+          "solution": [
+            "1",
+            "-2"
+          ],
+          "rank": 2,
+          "pivots": [
+            0,
+            1
+          ],
+          "free_columns": [],
+          "null_basis": [],
+          "rref_augmented": [
+            [
+              "1",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "-2"
+            ]
+          ]
+        },
+        "solve_residual": [
+          "0",
+          "0"
+        ],
+        "null_probability_tangents": [],
+        "full_simplex_rank": 2,
+        "full_simplex_reachable": true,
+        "full_simplex_natural_tangent": [
+          "-5/12",
+          "1/18",
+          "13/36"
+        ],
+        "natural": {
+          "parameter_direction": [
+            "1",
+            "-2"
+          ],
+          "logit_direction": [
+            "-3",
+            "-2",
+            "0"
+          ],
+          "probability_tangent": [
+            "-5/12",
+            "1/18",
+            "13/36"
+          ],
+          "full_simplex_gap_l1": "0",
+          "objective_derivative": "41/36",
+          "fisher_length_squared": "41/36",
+          "probability_length_squared": "41/36"
+        },
+        "ordinary": {
+          "parameter_direction": [
+            "-5/12",
+            "-7/9"
+          ],
+          "logit_direction": [
+            "-71/36",
+            "-7/9",
+            "0"
+          ],
+          "probability_tangent": [
+            "-157/432",
+            "101/648",
+            "269/1296"
+          ],
+          "full_simplex_gap_l1": "199/648",
+          "objective_derivative": "1009/1296",
+          "fisher_length_squared": "27785/46656",
+          "probability_length_squared": "27785/46656"
+        },
+        "diagonal": {
+          "parameter_direction": [
+            "-5/3",
+            "-7/5"
+          ],
+          "logit_direction": [
+            "-67/15",
+            "-7/5",
+            "0"
+          ],
+          "probability_tangent": [
+            "-53/60",
+            "13/30",
+            "9/20"
+          ],
+          "full_simplex_gap_l1": "14/15",
+          "objective_derivative": "107/60",
+          "fisher_length_squared": "601/180",
+          "probability_length_squared": "601/180"
+        },
+        "damped": {
+          "parameter_direction": [
+            "-25/213",
+            "-80/71"
+          ],
+          "logit_direction": [
+            "-505/213",
+            "-80/71",
+            "0"
+          ],
+          "probability_tangent": [
+            "-115/284",
+            "185/1278",
+            "665/2556"
+          ],
+          "full_simplex_gap_l1": "43/213",
+          "objective_derivative": "2365/2556",
+          "fisher_length_squared": "144625/181476",
+          "probability_length_squared": "144625/181476"
+        },
+        "representative": "exact RREF with free variables zero, not a pseudoinverse",
+        "scope": "local categorical expected reward; no state dynamics, sampled estimator, trust-region guarantee or training benchmark"
+      }
+    },
+    {
+      "name": "full_logits",
+      "audit": {
+        "version": 1,
+        "probabilities": [
+          "1/2",
+          "1/3",
+          "1/6"
+        ],
+        "rewards": [
+          "0",
+          "1",
+          "3"
+        ],
+        "coordinates": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "damping": "1/10",
+        "expected_reward": "5/6",
+        "reward_variance": "41/36",
+        "logit_fisher": [
+          [
+            "1/4",
+            "-1/6",
+            "-1/12"
+          ],
+          [
+            "-1/6",
+            "2/9",
+            "-1/18"
+          ],
+          [
+            "-1/12",
+            "-1/18",
+            "5/36"
+          ]
+        ],
+        "probability_jacobian": [
+          [
+            "1/4",
+            "-1/6",
+            "-1/12"
+          ],
+          [
+            "-1/6",
+            "2/9",
+            "-1/18"
+          ],
+          [
+            "-1/12",
+            "-1/18",
+            "5/36"
+          ]
+        ],
+        "pullback_fisher": [
+          [
+            "1/4",
+            "-1/6",
+            "-1/12"
+          ],
+          [
+            "-1/6",
+            "2/9",
+            "-1/18"
+          ],
+          [
+            "-1/12",
+            "-1/18",
+            "5/36"
+          ]
+        ],
+        "parameter_gradient": [
+          "-5/12",
+          "1/18",
+          "13/36"
+        ],
+        "score_rows": [
+          [
+            "1/2",
+            "-1/3",
+            "-1/6"
+          ],
+          [
+            "-1/2",
+            "2/3",
+            "-1/6"
+          ],
+          [
+            "-1/2",
+            "-1/3",
+            "5/6"
+          ]
+        ],
+        "score_gram": [
+          [
+            "1/4",
+            "-1/6",
+            "-1/12"
+          ],
+          [
+            "-1/6",
+            "2/9",
+            "-1/18"
+          ],
+          [
+            "-1/12",
+            "-1/18",
+            "5/36"
+          ]
+        ],
+        "pair_certificate": [
+          {
+            "actions": [
+              0,
+              1
+            ],
+            "weight": "1/6",
+            "difference": [
+              "1",
+              "-1",
+              "0"
+            ]
+          },
+          {
+            "actions": [
+              0,
+              2
+            ],
+            "weight": "1/12",
+            "difference": [
+              "1",
+              "0",
+              "-1"
+            ]
+          },
+          {
+            "actions": [
+              1,
+              2
+            ],
+            "weight": "1/18",
+            "difference": [
+              "0",
+              "1",
+              "-1"
+            ]
+          }
+        ],
+        "pair_gram": [
+          [
+            "1/4",
+            "-1/6",
+            "-1/12"
+          ],
+          [
+            "-1/6",
+            "2/9",
+            "-1/18"
+          ],
+          [
+            "-1/12",
+            "-1/18",
+            "5/36"
+          ]
+        ],
+        "gram_agrees": true,
+        "system": {
+          "solution": [
+            "-3",
+            "-2",
+            "0"
+          ],
+          "rank": 2,
+          "pivots": [
+            0,
+            1
+          ],
+          "free_columns": [
+            2
+          ],
+          "null_basis": [
+            [
+              "1",
+              "1",
+              "1"
+            ]
+          ],
+          "rref_augmented": [
+            [
+              "1",
+              "0",
+              "-1",
+              "-3"
+            ],
+            [
+              "0",
+              "1",
+              "-1",
+              "-2"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "solve_residual": [
+          "0",
+          "0",
+          "0"
+        ],
+        "null_probability_tangents": [
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "full_simplex_rank": 2,
+        "full_simplex_reachable": true,
+        "full_simplex_natural_tangent": [
+          "-5/12",
+          "1/18",
+          "13/36"
+        ],
+        "natural": {
+          "parameter_direction": [
+            "-3",
+            "-2",
+            "0"
+          ],
+          "logit_direction": [
+            "-3",
+            "-2",
+            "0"
+          ],
+          "probability_tangent": [
+            "-5/12",
+            "1/18",
+            "13/36"
+          ],
+          "full_simplex_gap_l1": "0",
+          "objective_derivative": "41/36",
+          "fisher_length_squared": "41/36",
+          "probability_length_squared": "41/36"
+        },
+        "ordinary": {
+          "parameter_direction": [
+            "-5/12",
+            "1/18",
+            "13/36"
+          ],
+          "logit_direction": [
+            "-5/12",
+            "1/18",
+            "13/36"
+          ],
+          "probability_tangent": [
+            "-31/216",
+            "5/81",
+            "53/648"
+          ],
+          "full_simplex_gap_l1": "181/324",
+          "objective_derivative": "199/648",
+          "fisher_length_squared": "541/5832",
+          "probability_length_squared": "541/5832"
+        },
+        "diagonal": {
+          "parameter_direction": [
+            "-5/3",
+            "1/4",
+            "13/5"
+          ],
+          "logit_direction": [
+            "-5/3",
+            "1/4",
+            "13/5"
+          ],
+          "probability_tangent": [
+            "-27/40",
+            "17/90",
+            "35/72"
+          ],
+          "full_simplex_gap_l1": "31/60",
+          "objective_derivative": "593/360",
+          "fisher_length_squared": "877/360",
+          "probability_length_squared": "877/360"
+        },
+        "damped": {
+          "parameter_direction": [
+            "-275/278",
+            "-20/139",
+            "315/278"
+          ],
+          "logit_direction": [
+            "-275/278",
+            "-20/139",
+            "315/278"
+          ],
+          "probability_tangent": [
+            "-265/834",
+            "175/2502",
+            "310/1251"
+          ],
+          "full_simplex_gap_l1": "63/278",
+          "objective_derivative": "2035/2502",
+          "fisher_length_squared": "406925/695556",
+          "probability_length_squared": "406925/695556"
+        },
+        "representative": "exact RREF with free variables zero, not a pseudoinverse",
+        "scope": "local categorical expected reward; no state dynamics, sampled estimator, trust-region guarantee or training benchmark"
+      }
+    },
+    {
+      "name": "redundant",
+      "audit": {
+        "version": 1,
+        "probabilities": [
+          "1/2",
+          "1/3",
+          "1/6"
+        ],
+        "rewards": [
+          "0",
+          "1",
+          "3"
+        ],
+        "coordinates": [
+          [
+            "1",
+            "2",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "damping": "1/10",
+        "expected_reward": "5/6",
+        "reward_variance": "41/36",
+        "logit_fisher": [
+          [
+            "1/4",
+            "-1/6",
+            "-1/12"
+          ],
+          [
+            "-1/6",
+            "2/9",
+            "-1/18"
+          ],
+          [
+            "-1/12",
+            "-1/18",
+            "5/36"
+          ]
+        ],
+        "probability_jacobian": [
+          [
+            "1/4",
+            "1/3",
+            "1/4",
+            "-1/6"
+          ],
+          [
+            "-1/6",
+            "-1/9",
+            "-1/6",
+            "2/9"
+          ],
+          [
+            "-1/12",
+            "-2/9",
+            "-1/12",
+            "-1/18"
+          ]
+        ],
+        "pullback_fisher": [
+          [
+            "1/4",
+            "1/3",
+            "1/4",
+            "-1/6"
+          ],
+          [
+            "1/3",
+            "5/9",
+            "1/3",
+            "-1/9"
+          ],
+          [
+            "1/4",
+            "1/3",
+            "1/4",
+            "-1/6"
+          ],
+          [
+            "-1/6",
+            "-1/9",
+            "-1/6",
+            "2/9"
+          ]
+        ],
+        "parameter_gradient": [
+          "-5/12",
+          "-7/9",
+          "-5/12",
+          "1/18"
+        ],
+        "score_rows": [
+          [
+            "1/2",
+            "2/3",
+            "1/2",
+            "-1/3"
+          ],
+          [
+            "-1/2",
+            "-1/3",
+            "-1/2",
+            "2/3"
+          ],
+          [
+            "-1/2",
+            "-4/3",
+            "-1/2",
+            "-1/3"
+          ]
+        ],
+        "score_gram": [
+          [
+            "1/4",
+            "1/3",
+            "1/4",
+            "-1/6"
+          ],
+          [
+            "1/3",
+            "5/9",
+            "1/3",
+            "-1/9"
+          ],
+          [
+            "1/4",
+            "1/3",
+            "1/4",
+            "-1/6"
+          ],
+          [
+            "-1/6",
+            "-1/9",
+            "-1/6",
+            "2/9"
+          ]
+        ],
+        "pair_certificate": [
+          {
+            "actions": [
+              0,
+              1
+            ],
+            "weight": "1/6",
+            "difference": [
+              "1",
+              "1",
+              "1",
+              "-1"
+            ]
+          },
+          {
+            "actions": [
+              0,
+              2
+            ],
+            "weight": "1/12",
+            "difference": [
+              "1",
+              "2",
+              "1",
+              "0"
+            ]
+          },
+          {
+            "actions": [
+              1,
+              2
+            ],
+            "weight": "1/18",
+            "difference": [
+              "0",
+              "1",
+              "0",
+              "1"
+            ]
+          }
+        ],
+        "pair_gram": [
+          [
+            "1/4",
+            "1/3",
+            "1/4",
+            "-1/6"
+          ],
+          [
+            "1/3",
+            "5/9",
+            "1/3",
+            "-1/9"
+          ],
+          [
+            "1/4",
+            "1/3",
+            "1/4",
+            "-1/6"
+          ],
+          [
+            "-1/6",
+            "-1/9",
+            "-1/6",
+            "2/9"
+          ]
+        ],
+        "gram_agrees": true,
+        "system": {
+          "solution": [
+            "1",
+            "-2",
+            "0",
+            "0"
+          ],
+          "rank": 2,
+          "pivots": [
+            0,
+            1
+          ],
+          "free_columns": [
+            2,
+            3
+          ],
+          "null_basis": [
+            [
+              "-1",
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "2",
+              "-1",
+              "0",
+              "1"
+            ]
+          ],
+          "rref_augmented": [
+            [
+              "1",
+              "0",
+              "1",
+              "-2",
+              "1"
+            ],
+            [
+              "0",
+              "1",
+              "0",
+              "1",
+              "-2"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        "solve_residual": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "null_probability_tangents": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "full_simplex_rank": 2,
+        "full_simplex_reachable": true,
+        "full_simplex_natural_tangent": [
+          "-5/12",
+          "1/18",
+          "13/36"
+        ],
+        "natural": {
+          "parameter_direction": [
+            "1",
+            "-2",
+            "0",
+            "0"
+          ],
+          "logit_direction": [
+            "-3",
+            "-2",
+            "0"
+          ],
+          "probability_tangent": [
+            "-5/12",
+            "1/18",
+            "13/36"
+          ],
+          "full_simplex_gap_l1": "0",
+          "objective_derivative": "41/36",
+          "fisher_length_squared": "41/36",
+          "probability_length_squared": "41/36"
+        },
+        "ordinary": {
+          "parameter_direction": [
+            "-5/12",
+            "-7/9",
+            "-5/12",
+            "1/18"
+          ],
+          "logit_direction": [
+            "-43/18",
+            "-13/18",
+            "0"
+          ],
+          "probability_tangent": [
+            "-103/216",
+            "77/324",
+            "155/648"
+          ],
+          "full_simplex_gap_l1": "59/162",
+          "objective_derivative": "619/648",
+          "fisher_length_squared": "11285/11664",
+          "probability_length_squared": "11285/11664"
+        },
+        "diagonal": {
+          "parameter_direction": [
+            "-5/3",
+            "-7/5",
+            "-5/3",
+            "1/4"
+          ],
+          "logit_direction": [
+            "-92/15",
+            "-23/20",
+            "0"
+          ],
+          "probability_tangent": [
+            "-161/120",
+            "23/30",
+            "23/40"
+          ],
+          "full_simplex_gap_l1": "37/20",
+          "objective_derivative": "299/120",
+          "fisher_length_squared": "529/72",
+          "probability_length_squared": "529/72"
+        },
+        "damped": {
+          "parameter_direction": [
+            "-175/648",
+            "-80/81",
+            "-175/648",
+            "-145/324"
+          ],
+          "logit_direction": [
+            "-815/324",
+            "-155/108",
+            "0"
+          ],
+          "probability_tangent": [
+            "-505/1296",
+            "65/648",
+            "125/432"
+          ],
+          "full_simplex_gap_l1": "31/216",
+          "objective_derivative": "1255/1296",
+          "fisher_length_squared": "351125/419904",
+          "probability_length_squared": "351125/419904"
+        },
+        "representative": "exact RREF with free variables zero, not a pseudoinverse",
+        "scope": "local categorical expected reward; no state dynamics, sampled estimator, trust-region guarantee or training benchmark"
+      }
+    },
+    {
+      "name": "restricted",
+      "audit": {
+        "version": 1,
+        "probabilities": [
+          "1/2",
+          "1/3",
+          "1/6"
+        ],
+        "rewards": [
+          "0",
+          "1",
+          "3"
+        ],
+        "coordinates": [
+          [
+            "1"
+          ],
+          [
+            "0"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "damping": "1/10",
+        "expected_reward": "5/6",
+        "reward_variance": "41/36",
+        "logit_fisher": [
+          [
+            "1/4",
+            "-1/6",
+            "-1/12"
+          ],
+          [
+            "-1/6",
+            "2/9",
+            "-1/18"
+          ],
+          [
+            "-1/12",
+            "-1/18",
+            "5/36"
+          ]
+        ],
+        "probability_jacobian": [
+          [
+            "1/4"
+          ],
+          [
+            "-1/6"
+          ],
+          [
+            "-1/12"
+          ]
+        ],
+        "pullback_fisher": [
+          [
+            "1/4"
+          ]
+        ],
+        "parameter_gradient": [
+          "-5/12"
+        ],
+        "score_rows": [
+          [
+            "1/2"
+          ],
+          [
+            "-1/2"
+          ],
+          [
+            "-1/2"
+          ]
+        ],
+        "score_gram": [
+          [
+            "1/4"
+          ]
+        ],
+        "pair_certificate": [
+          {
+            "actions": [
+              0,
+              1
+            ],
+            "weight": "1/6",
+            "difference": [
+              "1"
+            ]
+          },
+          {
+            "actions": [
+              0,
+              2
+            ],
+            "weight": "1/12",
+            "difference": [
+              "1"
+            ]
+          },
+          {
+            "actions": [
+              1,
+              2
+            ],
+            "weight": "1/18",
+            "difference": [
+              "0"
+            ]
+          }
+        ],
+        "pair_gram": [
+          [
+            "1/4"
+          ]
+        ],
+        "gram_agrees": true,
+        "system": {
+          "solution": [
+            "-5/3"
+          ],
+          "rank": 1,
+          "pivots": [
+            0
+          ],
+          "free_columns": [],
+          "null_basis": [],
+          "rref_augmented": [
+            [
+              "1",
+              "-5/3"
+            ]
+          ]
+        },
+        "solve_residual": [
+          "0"
+        ],
+        "null_probability_tangents": [],
+        "full_simplex_rank": 2,
+        "full_simplex_reachable": false,
+        "full_simplex_natural_tangent": [
+          "-5/12",
+          "1/18",
+          "13/36"
+        ],
+        "natural": {
+          "parameter_direction": [
+            "-5/3"
+          ],
+          "logit_direction": [
+            "-5/3",
+            "0",
+            "0"
+          ],
+          "probability_tangent": [
+            "-5/12",
+            "5/18",
+            "5/36"
+          ],
+          "full_simplex_gap_l1": "4/9",
+          "objective_derivative": "25/36",
+          "fisher_length_squared": "25/36",
+          "probability_length_squared": "25/36"
+        },
+        "ordinary": {
+          "parameter_direction": [
+            "-5/12"
+          ],
+          "logit_direction": [
+            "-5/12",
+            "0",
+            "0"
+          ],
+          "probability_tangent": [
+            "-5/48",
+            "5/72",
+            "5/144"
+          ],
+          "full_simplex_gap_l1": "47/72",
+          "objective_derivative": "25/144",
+          "fisher_length_squared": "25/576",
+          "probability_length_squared": "25/576"
+        },
+        "diagonal": {
+          "parameter_direction": [
+            "-5/3"
+          ],
+          "logit_direction": [
+            "-5/3",
+            "0",
+            "0"
+          ],
+          "probability_tangent": [
+            "-5/12",
+            "5/18",
+            "5/36"
+          ],
+          "full_simplex_gap_l1": "4/9",
+          "objective_derivative": "25/36",
+          "fisher_length_squared": "25/36",
+          "probability_length_squared": "25/36"
+        },
+        "damped": {
+          "parameter_direction": [
+            "-25/21"
+          ],
+          "logit_direction": [
+            "-25/21",
+            "0",
+            "0"
+          ],
+          "probability_tangent": [
+            "-25/84",
+            "25/126",
+            "25/252"
+          ],
+          "full_simplex_gap_l1": "11/21",
+          "objective_derivative": "125/252",
+          "fisher_length_squared": "625/1764",
+          "probability_length_squared": "625/1764"
+        },
+        "representative": "exact RREF with free variables zero, not a pseudoinverse",
+        "scope": "local categorical expected reward; no state dynamics, sampled estimator, trust-region guarantee or training benchmark"
+      }
+    }
+  ],
+  "nonlinear": {
+    "map": "z=theta^3, theta>0; binary reward(0,1), p(action1)=sigmoid(z)",
+    "theta": "1",
+    "step": "1/2",
+    "natural_logit_direction": "1",
+    "natural_theta_direction": "1/3",
+    "mapped_logit_tangent": "1",
+    "initial_probability_action1": 0.7310585786300049,
+    "probability_tangent_action1": 0.19661193324148185,
+    "direct_euler_logit": "3/2",
+    "curved_euler_logit": "343/216",
+    "logit_difference": "19/216",
+    "direct_probability_action1": 0.8175744761936437,
+    "curved_probability_action1": 0.8303293131823329,
+    "scope": "same initial tangent, different finite Euler steps; probabilities are floating point"
+  },
+  "finite_steps": [
+    {
+      "step": "1/64",
+      "updated_probabilities": [
+        0.4934627356893911,
+        0.33415576203294417,
+        0.17238150227766463
+      ],
+      "expected_reward": 0.851300268865938,
+      "linear_reward_prediction": "1961/2304",
+      "actual_kl_old_to_new": 0.00013991932089163527,
+      "quadratic_kl_prediction": "41/294912"
+    },
+    {
+      "step": "1/16",
+      "updated_probabilities": [
+        0.47354320676155415,
+        0.33605607977057905,
+        0.19040071346786683
+      ],
+      "expected_reward": 0.9072582201741796,
+      "linear_reward_prediction": "521/576",
+      "actual_kl_old_to_new": 0.002281606865321623,
+      "quadratic_kl_prediction": "41/18432"
+    },
+    {
+      "step": "1/4",
+      "updated_probabilities": [
+        0.3903682693270173,
+        0.33416185312286384,
+        0.27546987755011887
+      ],
+      "expected_reward": 1.1605714857732203,
+      "linear_reward_prediction": "161/144",
+      "actual_kl_old_to_new": 0.03918419119168571,
+      "quadratic_kl_prediction": "41/1152"
+    },
+    {
+      "step": "1",
+      "updated_probabilities": [
+        0.10518159388626894,
+        0.1906088102329359,
+        0.7042095958807951
+      ],
+      "expected_reward": 2.3032375978753215,
+      "linear_reward_prediction": "71/36",
+      "actual_kl_old_to_new": 0.7255864431513503,
+      "quadratic_kl_prediction": "41/72"
+    }
+  ],
+  "limits": "Exact rational local systems; finite-step probabilities/KL use floats. No general optimizer superiority or finite-step invariance claim."
+}

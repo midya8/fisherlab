@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="940" viewBox="0 0 1120 940">
+<title>FisherLab: local geometry is not a finite-step optimizer guarantee</title>
+<desc>Exact rational categorical Fisher systems, coordinate counterexamples, a nonlinear finite-step audit and a local KL comparison.</desc>
+<style>text{font-family:system-ui,sans-serif;fill:#dbeafe;font-size:15px}.muted{fill:#94a3b8}.mono{font-family:monospace;font-size:15px}.head{fill:#67e8f9;font-weight:600}.title{font-size:28px;font-weight:700}.small{font-size:13px}.warn{fill:#fbbf24}</style>
+<rect width="1120" height="940" fill="#0f172a"/>
+<metadata id="full-witness" encoding="zlib-base64-json">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</metadata>
+<text x="30" y="43" class="title" fill="#dbeafe" font-size="28" font-family="DejaVu Sans,sans-serif" font-weight="700">FisherLab | exact geometry, visible limits</text>
+<text x="30" y="73" class="muted" fill="#94a3b8" font-size="15" font-family="DejaVu Sans,sans-serif" font-weight="400">p=(1/2,1/3,1/6), rewards=(0,1,3), expected reward=5/6, variance=41/36</text>
+<text x="30" y="99" class="muted" fill="#94a3b8" font-size="15" font-family="DejaVu Sans,sans-serif" font-weight="400">Four full-tangent charts agree exactly. A restricted chart changes the reachable model.</text>
+<rect x="25" y="120" width="1070" height="303" rx="12" fill="#18253b" stroke="#334155"/>
+<text x="42" y="150" class="head small" fill="#67e8f9" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="700">chart</text>
+<text x="205" y="150" class="head small" fill="#67e8f9" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="700">rank / dim</text>
+<text x="348" y="150" class="head small" fill="#67e8f9" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="700">dp[0]</text>
+<text x="455" y="150" class="head small" fill="#67e8f9" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="700">dp[1]</text>
+<text x="565" y="150" class="head small" fill="#67e8f9" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="700">dp[2]</text>
+<text x="680" y="150" class="head small" fill="#67e8f9" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="700">natural gap</text>
+<text x="815" y="150" class="head small" fill="#67e8f9" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="700">diag gap</text>
+<text x="950" y="150" class="head small" fill="#67e8f9" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="700">damped gap</text>
+<text x="42" y="174" class="muted small" fill="#94a3b8" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="400">Gaps are L1 to full-simplex natural tangent; damping uses G+(1/10)I. All cells exact.</text>
+<text id="chart-0-0" x="42" y="210" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">baseline</text>
+<text id="chart-0-1" x="205" y="210" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">2 / 2</text>
+<text id="chart-0-2" x="348" y="210" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">-5/12</text>
+<text id="chart-0-3" x="455" y="210" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">1/18</text>
+<text id="chart-0-4" x="565" y="210" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">13/36</text>
+<text id="chart-0-5" x="680" y="210" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0</text>
+<text id="chart-0-6" x="815" y="210" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">5/9</text>
+<text id="chart-0-7" x="950" y="210" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">7/17</text>
+<text id="chart-1-0" x="42" y="247" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">shear</text>
+<text id="chart-1-1" x="205" y="247" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">2 / 2</text>
+<text id="chart-1-2" x="348" y="247" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">-5/12</text>
+<text id="chart-1-3" x="455" y="247" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">1/18</text>
+<text id="chart-1-4" x="565" y="247" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">13/36</text>
+<text id="chart-1-5" x="680" y="247" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0</text>
+<text id="chart-1-6" x="815" y="247" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">14/15</text>
+<text id="chart-1-7" x="950" y="247" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">43/213</text>
+<text id="chart-2-0" x="42" y="284" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">full_logits</text>
+<text id="chart-2-1" x="205" y="284" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">2 / 3</text>
+<text id="chart-2-2" x="348" y="284" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">-5/12</text>
+<text id="chart-2-3" x="455" y="284" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">1/18</text>
+<text id="chart-2-4" x="565" y="284" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">13/36</text>
+<text id="chart-2-5" x="680" y="284" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0</text>
+<text id="chart-2-6" x="815" y="284" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">31/60</text>
+<text id="chart-2-7" x="950" y="284" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">63/278</text>
+<text id="chart-3-0" x="42" y="321" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">redundant</text>
+<text id="chart-3-1" x="205" y="321" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">2 / 4</text>
+<text id="chart-3-2" x="348" y="321" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">-5/12</text>
+<text id="chart-3-3" x="455" y="321" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">1/18</text>
+<text id="chart-3-4" x="565" y="321" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">13/36</text>
+<text id="chart-3-5" x="680" y="321" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0</text>
+<text id="chart-3-6" x="815" y="321" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">37/20</text>
+<text id="chart-3-7" x="950" y="321" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">31/216</text>
+<text id="chart-4-0" x="42" y="358" class="mono warn" fill="#fbbf24" font-size="15" font-family="monospace" font-weight="400">restricted</text>
+<text id="chart-4-1" x="205" y="358" class="mono warn" fill="#fbbf24" font-size="15" font-family="monospace" font-weight="400">1 / 1</text>
+<text id="chart-4-2" x="348" y="358" class="mono warn" fill="#fbbf24" font-size="15" font-family="monospace" font-weight="400">-5/12</text>
+<text id="chart-4-3" x="455" y="358" class="mono warn" fill="#fbbf24" font-size="15" font-family="monospace" font-weight="400">5/18</text>
+<text id="chart-4-4" x="565" y="358" class="mono warn" fill="#fbbf24" font-size="15" font-family="monospace" font-weight="400">5/36</text>
+<text id="chart-4-5" x="680" y="358" class="mono warn" fill="#fbbf24" font-size="15" font-family="monospace" font-weight="400">4/9</text>
+<text id="chart-4-6" x="815" y="358" class="mono warn" fill="#fbbf24" font-size="15" font-family="monospace" font-weight="400">4/9</text>
+<text id="chart-4-7" x="950" y="358" class="mono warn" fill="#fbbf24" font-size="15" font-family="monospace" font-weight="400">11/21</text>
+<text x="42" y="403" class="muted small" fill="#94a3b8" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="400">Free variables are set to zero by exact RREF. This is not a minimum-norm pseudoinverse.</text>
+<rect x="25" y="440" width="587" height="219" rx="12" fill="#18253b" stroke="#334155"/>
+<rect x="628" y="440" width="467" height="219" rx="12" fill="#18253b" stroke="#334155"/>
+<text x="43" y="470" class="head" fill="#67e8f9" font-size="15" font-family="DejaVu Sans,sans-serif" font-weight="700">A nonlinear chart: same tangent, different step</text>
+<text x="43" y="495" class="small" fill="#dbeafe" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="400">Binary p(1)=sigmoid(z), z=theta^3, theta=1, eta=1/2</text>
+<text x="43" y="523" class="small muted" fill="#94a3b8" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="400">natural dz / natural dtheta</text>
+<text id="nonlinear-0" x="335" y="523" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">1 / 1/3</text>
+<text x="43" y="550" class="small muted" fill="#94a3b8" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="400">direct / mapped Euler logit</text>
+<text id="nonlinear-1" x="335" y="550" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">3/2 / 343/216</text>
+<text x="43" y="577" class="small muted" fill="#94a3b8" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="400">logit difference (exact)</text>
+<text id="nonlinear-2" x="335" y="577" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">19/216</text>
+<text x="43" y="604" class="small muted" fill="#94a3b8" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="400">direct / curved p(1)</text>
+<text id="nonlinear-3" x="335" y="604" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0.817574 / 0.830329</text>
+<text x="646" y="470" class="head" fill="#67e8f9" font-size="15" font-family="DejaVu Sans,sans-serif" font-weight="700">Singular metric, inspectable certificates</text>
+<text x="646" y="499" class="small" fill="#dbeafe" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="400">G = sum over i&lt;j p[i] p[j] d[i,j] d[i,j]^T</text>
+<text x="646" y="525" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">d[i,j] = A[i,:] - A[j,:]</text>
+<text x="646" y="553" class="small" fill="#dbeafe" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="400">Every weight is positive. Null directions map to dp=0.</text>
+<text x="646" y="582" class="small" fill="#dbeafe" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="400">Full charts: derivative = metric length = reward variance.</text>
+<text x="646" y="610" class="small warn" fill="#fbbf24" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="400">Restricted chart: orthogonal projection, not a failed solve.</text>
+<text x="646" y="639" class="small muted" fill="#94a3b8" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="400">Complete rational matrices, nullspaces and Gram witness in JSON.</text>
+<rect x="25" y="678" width="1070" height="200" rx="12" fill="#18253b" stroke="#334155"/>
+<text x="43" y="708" class="head" fill="#67e8f9" font-size="15" font-family="DejaVu Sans,sans-serif" font-weight="700">Local KL approximation is not an exact finite-step constraint</text>
+<text x="43" y="735" class="head small" fill="#67e8f9" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="700">step</text>
+<text x="190" y="735" class="head small" fill="#67e8f9" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="700">actual KL(p || p_new)</text>
+<text x="392" y="735" class="head small" fill="#67e8f9" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="700">local eta^2 Var(r)/2</text>
+<text x="620" y="735" class="head small" fill="#67e8f9" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="700">actual new reward</text>
+<text x="850" y="735" class="head small" fill="#67e8f9" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="700">linear prediction</text>
+<text id="step-0-0" x="43" y="762" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">1/64</text>
+<text id="step-0-1" x="190" y="762" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0.000140</text>
+<text id="step-0-2" x="392" y="762" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0.000139</text>
+<text id="step-0-3" x="620" y="762" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0.851300</text>
+<text id="step-0-4" x="850" y="762" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0.851128</text>
+<text id="step-1-0" x="43" y="791" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">1/16</text>
+<text id="step-1-1" x="190" y="791" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0.002282</text>
+<text id="step-1-2" x="392" y="791" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0.002224</text>
+<text id="step-1-3" x="620" y="791" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0.907258</text>
+<text id="step-1-4" x="850" y="791" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0.904514</text>
+<text id="step-2-0" x="43" y="820" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">1/4</text>
+<text id="step-2-1" x="190" y="820" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0.039184</text>
+<text id="step-2-2" x="392" y="820" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0.035590</text>
+<text id="step-2-3" x="620" y="820" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">1.160571</text>
+<text id="step-2-4" x="850" y="820" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">1.118056</text>
+<text id="step-3-0" x="43" y="849" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">1</text>
+<text id="step-3-1" x="190" y="849" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0.725586</text>
+<text id="step-3-2" x="392" y="849" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">0.569444</text>
+<text id="step-3-3" x="620" y="849" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">2.303238</text>
+<text id="step-3-4" x="850" y="849" class="mono" fill="#dbeafe" font-size="15" font-family="monospace" font-weight="400">1.972222</text>
+<text x="30" y="906" class="muted small" fill="#94a3b8" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="400">Exact rational geometry; finite-step probabilities and KL use floating point. Positive support required.</text>
+<text x="30" y="929" class="muted small" fill="#94a3b8" font-size="13" font-family="DejaVu Sans,sans-serif" font-weight="400">Standard natural-gradient ideas: Kakade (2001), Martens (2020). Not an MDP, neural trainer or superiority benchmark.</text>
+</svg>
