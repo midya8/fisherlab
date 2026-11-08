@@ -43,12 +43,12 @@ The output exposes the full target length, reachable rank, per-context condition
 
 ## Chosen fixture: aggregate improvement can hide a local loss
 
-Both contexts have binary probabilities `(1/2,1/2)` and logit Jacobian rows `(0),(1)`, sharing one scalar. Rewards are `(0,1)` in context0 and `(0,-2)` in context1. Frequencies are `(3/4,1/4)`.
+Both contexts have binary probabilities `(1/2,1/2)` and logit Jacobian rows `(0),(1)`, sharing one scalar. Rewards are `(0,1)` in context 0 and `(0,-2)` in context 1. Frequencies are `(3/4,1/4)`.
 
 ```text
 G = 1/4,  g = 1/16,  natural v = 1/4
-context0 reward derivative = 1/16
-context1 reward derivative = -1/8
+context 0 reward derivative = 1/16
+context 1 reward derivative = -1/8
 weighted objective derivative = 1/64
 full conditional target length = 7/16
 reachable length = 1/64, residual length = 27/64
@@ -61,7 +61,7 @@ Changing frequencies to `(1/2,1/2)` changes both objective and metric. Its share
 
 ## Why a naive global softmax is wrong here
 
-A policy conditioned on a fixed context can add a different constant to every action logit within each context without changing any conditional probability. With context0 rows `(0),(0)` and context1 rows `(1),(1)`, the correct conditional Fisher/gradient are both zero. All shared directions are invisible.
+A policy conditioned on a fixed context can add a different constant to every action logit within each context without changing any conditional probability. With context 0 rows `(0),(0)` and context 1 rows `(1),(1)`, the correct conditional Fisher/gradient are both zero. All shared directions are invisible.
 
 Instead, naively treating the four joint outcomes as one global softmax, with probabilities `(3/8,3/8,1/8,1/8)`, produces a nonzero Fisher `3/16` and gradient `-9/32`. This alternate model moves context mass. It is not the fixed-context model. The demo labels this control as a different model, and never uses it to compute `audit_contexts` updates.
 
@@ -77,6 +77,6 @@ python examples/render_contexts.py --check
 
 JSON requires exactly integer `version:1`, `weights`, `contexts` and positive `damping`. Each context requires exactly `probabilities`, `rewards`, `coordinates`. Existing rational/dimension/100KB/duplicate-field rules apply; zero context weights are rejected instead of silently dropping observations. Python contexts are dictionaries with these same three fields. Context order is preserved and all reports retain supplied context frequencies.
 
-Fourteen new behavior tests include independent weighted reward and KL-Hessian finite differences, direct joint-score reconstruction with contextwise centering, exact shared/independent/reweighted/gauge controls, per-context gauge/reward-shift invariance, context reordering/weight splitting, 5 seeded systems including 6contexts/12parameters, projection optimality against 8 rational competitors per system, nullspace/PSD/metric identities, strict CLI/API and no mutation/RNG side effects. Three new SVG tests verify all chart cells/positions, projection/gauge controls, full compressed metadata, hidden local-score tampering and byte-exact regeneration. Existing28tests remain unchanged and passing.
+Fourteen new behavior tests include independent weighted reward and KL-Hessian finite differences, direct joint-score reconstruction with contextwise centering, exact shared/independent/reweighted/gauge controls, per-context gauge/reward-shift invariance, context reordering/weight splitting, 5 seeded systems including 6 contexts / 12 parameters, projection optimality against 8 rational competitors per system, nullspace/PSD/metric identities, strict CLI/API and no mutation/RNG side effects. Three new SVG tests verify all chart cells/positions, projection/gauge controls, full compressed metadata, hidden local-score tampering and byte-exact regeneration. Existing 28 tests remain unchanged and passing.
 
-This is local supplied-model geometry, not policy training, an MDP occupancy derivative, estimated counterfactual reward, fairness guarantee, finite-step reward bound or optimizer-superiority claim. Context weights are explicitly exogenous. The original single-context demo and SVG remain byte-identical. Natural-gradient/Fisher foundations retain Kakade(2001) and Martens(2020) attribution in README; the shared-context normal equation and projection are small explicit instances of established geometry, not new theory.
+This is local supplied-model geometry, not policy training, an MDP occupancy derivative, estimated counterfactual reward, fairness guarantee, finite-step reward bound or optimizer-superiority claim. Context weights are explicitly exogenous. The original single-context demo and SVG remain byte-identical. Natural-gradient/Fisher foundations retain Kakade (2001) and Martens (2020) attribution in README; the shared-context normal equation and projection are small explicit instances of established geometry, not new theory.
