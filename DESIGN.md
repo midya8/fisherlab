@@ -1,4 +1,4 @@
-# Geometry, singular systems and scope
+# FisherLab single-context geometry
 
 ## Categorical model
 
@@ -42,9 +42,9 @@ For an arbitrary rectangular or rank-deficient local Jacobian, we claim equality
 
 ## Nonlinear finite-step control
 
-Separately define a binary policy `p1=sigmoid(z)`, reward `(0,1)` and smooth local chart `z=theta^3` at `theta=1>0`. The map is a diffeomorphism on the positive domain, not at theta0. In direct logits, reward gradient and Fisher are both `p1(1-p1)`, so the natural direction is 1. In theta coordinates, gradient is `3 theta^2 p1(1-p1)` and Fisher `9 theta^4 p1(1-p1)`, so the direction is `1/(3 theta^2)`.
+Separately define a binary policy `p1=sigmoid(z)`, reward `(0,1)` and smooth local chart `z=theta^3` at `theta=1>0`. The map is a diffeomorphism on the positive domain, not at theta=0. In direct logits, reward gradient and Fisher are both `p1(1-p1)`, so the natural direction is 1. In theta coordinates, gradient is `3 theta^2 p1(1-p1)` and Fisher `9 theta^4 p1(1-p1)`, so the direction is `1/(3 theta^2)`.
 
-Their mapped initial tangents agree. At theta1, step eta gives direct logit `1+eta` but curved logit `(1+eta/3)^3`. Their difference is `eta^2/3+eta^3/27`, nonzero at finite positive eta and second order as eta tends to zero. Eta1/2 yields exact `19/216`. This does not require training or numerical inversion.
+Their mapped initial tangents agree. At theta=1, step eta gives direct logit `1+eta` but curved logit `(1+eta/3)^3`. Their difference is `eta^2/3+eta^3/27`, nonzero at finite positive eta and second order as eta tends to zero. Eta=1/2 yields exact `19/216`. This does not require training or numerical inversion.
 
 A separate finite affine-logit step has `p_new_i proportional to p_i exp(eta r_i)`. The report compares actual floating `KL(p_old||p_new)` to local `eta^2 Var(r)/2`, and actual reward to `E[r]+eta Var(r)`. These are expansions, not finite constraints or certified bounds. Local rational arithmetic is distinguished from floating exponentials/logs.
 
