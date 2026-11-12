@@ -1,6 +1,8 @@
 # FisherLab
 
-Exact-rational natural-policy-gradient geometry, with every matrix and nullspace exposed. Python 3.10+, no runtime dependencies, offline.
+FisherLab computes natural-gradient directions for supplied categorical action probabilities, rewards and coordinate matrices. It returns every Fisher matrix, singular-system solve and nullspace direction using exact rational arithmetic. It runs offline in Python 3.10+ without runtime dependencies.
+
+Use [the single-context calculation](DESIGN.md) to compare coordinate charts, or [the shared-context calculation](CONTEXTS.md) to inspect how one parameter direction trades off fixed contexts.
 
 Natural gradients are often described as "parameterization invariant." This project makes the qualifiers executable: full categorical Fisher solves agree in probability space, diagonal approximations and coordinate damping need not, restricted models have fewer reachable tangents, and nonlinear finite Euler steps need not agree even when their initial tangents do.
 
@@ -65,8 +67,8 @@ Inputs: 2-8 strictly positive rational probabilities summing exactly to 1, align
 
 ## Verification and limits
 
-- 25 behavior tests cover independently computed finite-difference reward/probability derivatives, every entry of a KL Hessian, exact closed forms, 16 seeded chart configurations up to 8 actions/12 parameters, gauge/reward-shift and ordering invariance, frozen/restricted/overcomplete charts, complete singular-system residual/null witnesses, sum-of-squares quadratic certificates, finite-step controls, strict API/CLI errors, immutability and global RNG isolation.
-- Three SVG tests verify all 60 table cells and positions, exact nonlinear logit controls, complete compressed report metadata, hidden witness tampering and byte regeneration.
+- The original 25 behavior tests, retained in the current suite of 45, cover independently computed finite-difference reward/probability derivatives, every entry of a KL Hessian, exact closed forms, 16 seeded chart configurations up to 8 actions/12 parameters, gauge/reward-shift and ordering invariance, frozen/restricted/overcomplete charts, complete singular-system residual/null witnesses, sum-of-squares quadratic certificates, finite-step controls, strict API/CLI errors, immutability and global RNG isolation.
+- Three original SVG tests verify all 60 table cells and positions, exact nonlinear logit controls, complete compressed report metadata, hidden witness tampering and byte regeneration.
 - Full-support categorical expected reward only. There are no MDP transitions, estimated occupancies, learned critics, sampled Fisher/gradient noise, policy training, neural networks, line search, trust-region enforcement or convergence/optimizer-superiority benchmark. Boundary probabilities are rejected, not regularized silently.
 - Singular solves are consistent because the reward gradient is in the pullback Fisher's range. The PSD certificate uses positive action probabilities. Damping is deliberately coordinate-identity damping, not an invariantly transformed regularizer. The input Jacobian alone does not specify any nonlinear finite update; that control is separately defined.
 
@@ -80,7 +82,7 @@ With context frequencies `(3/4,1/4)`, equal binary action probabilities and rewa
 
 Replacing frequencies with uniform weights changes the objective. Its natural direction `-1/2` has derivative `-1/32` when evaluated on the original weighted objective. A separate context-gauge control is frozen under conditional normalization but has spurious nonzero Fisher/gradient if naively modeled as a global joint softmax. Full context-tagged PSD, RREF/nullspace, per-context derivative and projection witnesses make both distinctions inspectable.
 
-14 new behavior tests plus 3 SVG tests supplement the original 28, including independent weighted reward/KL finite differences, centered joint-score reconstruction, exact projection/null certificates, strict CLI and conditional-versus-joint controls. Context weights are positive exogenous constants, not MDP occupancies or policy-dependent frequencies. Local derivative agreement and aggregate improvement do not promise every context or finite step improves.
+Fourteen shared-context behavior tests and three SVG tests bring the full suite to 45, retaining the original 28, including independent weighted reward/KL finite differences, centered joint-score reconstruction, exact projection/null certificates, strict CLI and conditional-versus-joint controls. Context weights are positive exogenous constants, not MDP occupancies or policy-dependent frequencies. Local derivative agreement and aggregate improvement do not promise every context or finite step improves.
 
 ## Attribution
 
