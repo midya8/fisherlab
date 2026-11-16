@@ -5,3 +5,6 @@ __all__ = ['audit', 'encode', 'run_demo']
 
 from .contexts import audit_contexts, run_context_demo
 __all__ += ['audit_contexts', 'run_context_demo']
+
+from .interference import audit_interference
+__all__ += ['audit_interference']
