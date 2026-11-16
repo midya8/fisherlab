@@ -1,7 +1,7 @@
 import json
 import sys
 from pathlib import Path
-from . import audit, encode, run_demo, audit_contexts, run_context_demo
+from . import audit, encode, run_demo, audit_contexts, run_context_demo, audit_interference
 
 
 def main(argv=None):
@@ -11,7 +11,7 @@ def main(argv=None):
             out = run_demo()
         elif argv == ['context-demo']:
             out = run_context_demo()
-        elif len(argv) == 2 and argv[0] in ['audit', 'contexts']:
+        elif len(argv) == 2 and argv[0] in ['audit', 'contexts', 'interference']:
             raw = Path(argv[1]).read_bytes()
             if len(raw) > 100000:
                 raise ValueError('input exceeds100KB')
@@ -29,9 +29,9 @@ def main(argv=None):
                     or type(obj['version']) is not int or obj['version'] != 1):
                 raise ValueError('expected integer version1 and exact fields: '+','.join(sorted(fields)))
             out = (audit(obj['probabilities'], obj['rewards'], obj['coordinates'], obj['damping']) if argv[0]=='audit'
-                   else audit_contexts(obj['weights'], obj['contexts'], obj['damping']))
+                   else (audit_contexts if argv[0]=='contexts' else audit_interference)(obj['weights'], obj['contexts'], obj['damping']))
         else:
-            raise ValueError('usage: python -m fisherlab demo | audit INPUT.json | context-demo | contexts INPUT.json')
+            raise ValueError('usage: python -m fisherlab demo | audit INPUT.json | context-demo | contexts INPUT.json | interference INPUT.json')
         print(json.dumps(encode(out), indent=2, allow_nan=False))
         return 0
     except (ValueError, TypeError, OSError, OverflowError, RecursionError) as e:
