@@ -19,7 +19,7 @@ pip install .
 fisherlab demo
 ```
 
-The demo asserts both agreement and counterexamples. The committed [full report](examples/demo.json), [strict input](examples/input.json), [proof and scope](DESIGN.md) and byte-reproducible SVG make the numbers inspectable. 45 tests pass. CI runs Python 3.10-3.13, both CLI paths, SVG regeneration and installed-wheel comparisons outside the source checkout.
+The demo asserts both agreement and counterexamples. The committed [full report](examples/demo.json), [strict input](examples/input.json), [proof and scope](DESIGN.md) and byte-reproducible SVG make the numbers inspectable. 53 tests pass. CI runs Python 3.10-3.13, both CLI paths, SVG regeneration and installed-wheel comparisons outside the source checkout.
 
 ## Exact fixture, not a training benchmark
 
@@ -67,7 +67,7 @@ Inputs: 2-8 strictly positive rational probabilities summing exactly to 1, align
 
 ## Verification and limits
 
-- The original 25 behavior tests, retained in the current suite of 45, cover independently computed finite-difference reward/probability derivatives, every entry of a KL Hessian, exact closed forms, 16 seeded chart configurations up to 8 actions/12 parameters, gauge/reward-shift and ordering invariance, frozen/restricted/overcomplete charts, complete singular-system residual/null witnesses, sum-of-squares quadratic certificates, finite-step controls, strict API/CLI errors, immutability and global RNG isolation.
+- The original 25 behavior tests, retained in the current suite of 53, cover independently computed finite-difference reward/probability derivatives, every entry of a KL Hessian, exact closed forms, 16 seeded chart configurations up to 8 actions/12 parameters, gauge/reward-shift and ordering invariance, frozen/restricted/overcomplete charts, complete singular-system residual/null witnesses, sum-of-squares quadratic certificates, finite-step controls, strict API/CLI errors, immutability and global RNG isolation.
 - Three original SVG tests verify all 60 table cells and positions, exact nonlinear logit controls, complete compressed report metadata, hidden witness tampering and byte regeneration.
 - Full-support categorical expected reward only. There are no MDP transitions, estimated occupancies, learned critics, sampled Fisher/gradient noise, policy training, neural networks, line search, trust-region enforcement or convergence/optimizer-superiority benchmark. Boundary probabilities are rejected, not regularized silently.
 - Singular solves are consistent because the reward gradient is in the pullback Fisher's range. The PSD certificate uses positive action probabilities. Damping is deliberately coordinate-identity damping, not an invariantly transformed regularizer. The input Jacobian alone does not specify any nonlinear finite update; that control is separately defined.
@@ -83,6 +83,46 @@ With context frequencies `(3/4,1/4)`, equal binary action probabilities and rewa
 Replacing frequencies with uniform weights changes the objective. Its natural direction `-1/2` has derivative `-1/32` when evaluated on the original weighted objective. A separate context-gauge control is frozen under conditional normalization but has spurious nonzero Fisher/gradient if naively modeled as a global joint softmax. Full context-tagged PSD, RREF/nullspace, per-context derivative and projection witnesses make both distinctions inspectable.
 
 Fourteen shared-context behavior tests and three SVG tests bring the full suite to 45, retaining the original 28, including independent weighted reward/KL finite differences, centered joint-score reconstruction, exact projection/null certificates, strict CLI and conditional-versus-joint controls. Context weights are positive exogenous constants, not MDP occupancies or policy-dependent frequencies. Local derivative agreement and aggregate improvement do not promise every context or finite step improves.
+
+## Which context gradients help or oppose each other?
+
+`audit_interference` solves each context's reward gradient against the same
+weighted aggregate Fisher, then returns the exact interaction matrix
+`H[c][d] = g_c^T v_d`, where `G v_d = g_d`. It retains each complete singular
+system and checks its residuals, symmetry and reconstruction of the original
+shared update. It does not average directions from separate context Fishers.
+
+```sh
+python -m fisherlab interference examples/contexts-input.json
+python examples/verify_wheel.py
+```
+
+For the existing two-context fixture,
+`H = [[1/4,-1/2],[-1/2,1]]`. Multiplying by the original frequencies
+`(3/4,1/4)` gives local reward derivatives `(1/16,-1/8)` and weighted derivative
+`1/64`. Negative off-diagonal terms make the local tradeoff visible. The matrix
+is symmetric positive semidefinite even when individual entries are negative.
+
+[Derivation and full contract](INTERFERENCE.md). The CLI accepts the same exact
+version-one input as `contexts`; the Python API takes the same arguments as
+`audit_contexts`. The matrix uses the undamped aggregate Fisher. Damping remains
+in the retained original report and does not change this matrix. Singular
+representatives are RREF solutions, not pseudoinverses. Invertible or redundant
+coordinate changes preserving the reachable probability tangents preserve `H`.
+
+Eight new tests cover independent binary closed forms, 16 separate
+permutation-determinant references with six unequal-action contexts, singular
+and frozen charts, independent parameters, coordinate/reward/context
+transformations, strict CLI/API errors and isolation. Three deliberate
+mutations of the weighting, metric and interaction signs are rejected. All four
+original complete reports and both figures remain unchanged. CI also runs the
+full installed suite outside checkout, checks all six package origins before
+and after, compares all five complete reports through both entry points and
+regenerates both original figures.
+
+These are local supplied-model derivatives, not estimated task affinity,
+causal effects, a fairness guarantee, sampled-gradient noise or evidence of
+finite-step improvement, learning speed or optimizer superiority.
 
 ## Attribution
 
