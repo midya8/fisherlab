@@ -40,3 +40,5 @@ jobs:
       - run: cd /tmp && fisherlab context-demo > /tmp/wheel-context-demo.json
       - run: cd /tmp && fisherlab contexts "$GITHUB_WORKSPACE/examples/contexts-input.json" > /tmp/wheel-contexts.json
       - run: python -c "import json; assert json.load(open('/tmp/context-demo.json'))==json.load(open('/tmp/wheel-context-demo.json')); assert json.load(open('/tmp/contexts.json'))==json.load(open('/tmp/wheel-contexts.json'))"
+      - run: python -m fisherlab interference examples/contexts-input.json > /tmp/interference.json
+      - run: python examples/verify_wheel.py
