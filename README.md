@@ -1,4 +1,4 @@
-# FisherLab
+# Policy geometry
 
 FisherLab computes natural-gradient directions for supplied categorical action probabilities, rewards and coordinate matrices. It returns every Fisher matrix, singular-system solve and nullspace direction using exact rational arithmetic. It runs offline in Python 3.10+ without runtime dependencies.
 
@@ -7,6 +7,9 @@ Use [the single-context calculation](DESIGN.md) to compare coordinate charts, or
 Natural gradients are often described as "parameterization invariant." This project makes the qualifiers executable: full categorical Fisher solves agree in probability space, diagonal approximations and coordinate damping need not, restricted models have fewer reachable tangents, and nonlinear finite Euler steps need not agree even when their initial tangents do.
 
 ![Exact categorical geometry, coordinate counterexamples and finite-step limits](assets/fisher-audit.svg)
+
+The repository is now `policy-geometry`. The Python import and CLI names stay
+`fisherlab` for compatibility with existing scripts.
 
 ## Run
 
