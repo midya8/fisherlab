@@ -1,6 +1,6 @@
 # Policy geometry
 
-FisherLab computes natural-gradient directions for supplied categorical action probabilities, rewards and coordinate matrices. It returns every Fisher matrix, singular-system solve and nullspace direction using exact rational arithmetic. It runs offline in Python 3.10+ without runtime dependencies.
+This implementation computes natural-gradient directions for supplied categorical action probabilities, rewards and coordinate matrices. It returns every Fisher matrix, singular-system solve and nullspace direction using exact rational arithmetic. It runs offline in Python 3.10+ without runtime dependencies.
 
 Use [the single-context calculation](DESIGN.md) to compare coordinate charts, or [the shared-context calculation](CONTEXTS.md) to inspect how one parameter direction trades off fixed contexts.
 
